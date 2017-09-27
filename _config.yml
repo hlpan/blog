@@ -3,7 +3,7 @@ title: '潘海龙的博客'
 description: '整理思路。'
 keyword: '三维重建,SLAM,机器学习'
 url: 'https://hlpan.github.io/' # your host
-baseurl: '/'
+baseurl: 'https://hlpan.github.io/'
 
 # Navigation links
 nav:
