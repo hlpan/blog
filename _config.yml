@@ -1,72 +1,60 @@
-# Site settings 配置站点
-title: '___的博客'
-description: '整理思路。'
-keyword: '三维重建,SLAM,机器学习'
-url: 'https://hlpan.github.io' # your host
-baseurl: ''
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Navigation links
-nav:
-  home: '/'
-  tags: '/tags.html'
+# Site settings
+title: ___的博客
+brief-intro: 记录三维重建的学习过程
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hlpan.github.io" # the base hostname & protocol for your site
 
-# Author 配置博主信息
-author: '暂时隐去个人信息'
-nickname: '小白龙'
-bio: '三维重建技术研究'
-#avatar: 'assets/img/profile.jpg'
+permalink: /:year/:month/:day/:title/
 
-# Search
-search: true
+# other links
+#twitter_username: gaohaoyang126
+#facebook_username: gaohaoyang.water
+#github_username:  Gaohaoyang
+email: lglgaigogo@qq.com
+#weibo_username: 3115521wh
+#zhihu_username: gaohaoyang
+#linkedIn_username: gaohaoyang
+#dribbble_username:
 
-# Night mode
-nightMode: true
+#description_footer: 本站记录我前端之旅的沿途风景！
 
-# Comments
-disqus: false
-disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+# comments
+# two ways to comment, only choose one, and use your own short name
+# 两种评论插件，选一个就好了，使用自己的 short_name
+#duoshuo_shortname: #hygblog
+#disqus_shortname: gaohaoyang
 
-# Share
-social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
-
-# theme color 主题皮肤
-theme-color: 'default'  # pink or default
-
-# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
-postPatterns: 'circuitBoard'
-
-# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
-sns:
-#  weibo: '//weibo.com/lovecolcol'
-#  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-#  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/hlpan'
-
-# Tags 设置标签
-recommend-tags: true # whether or not display recommend-tags on the sidebar
-recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+#baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+#google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
-paginate: 6
-paginate_path: 'page:num'
-exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
-
-# Markdown
-#highlighter: none
 markdown: kramdown
-kramdown: 
+
+kramdown:
   input: GFM
-  syntax_highlighter_opts:
-    disable : true
+  syntax_highlighter: rouge
 
-# Markdown
-#markdown: kramdown
-#highlighter: rouge
-#kramdown:
-#  input: GFM
+# port
+# port: 1234
 
-RSS: false
+# url
+category_dir: category/
+tag_dir: tag/
 
-# Plugins
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
 plugins: [jekyll-paginate]
+paginate: 6
