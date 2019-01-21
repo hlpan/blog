@@ -59,7 +59,7 @@ def get_id_url(base_url):
 		a1 = soup.find_all("li",class_="a1")
 		for item in a1:
 			name_list.append(str(item.find("a").contents[0]))
-		print("分析完成，共%d个文件."%(len(id_list)))
+	print("分析完成，共%d个文件."%(len(id_list)))
 	return [ablum_name, dict(zip(id_list, name_list))]
 
 def down_load(save_path,id_url_list):
@@ -95,6 +95,7 @@ def down_load(save_path,id_url_list):
 	
 		open(filename, 'wb').write(data)
 		time.sleep(15.0)
+	print("下载完成")
 	
 if __name__ == '__main__':
 	if len(sys.argv) != 2:
